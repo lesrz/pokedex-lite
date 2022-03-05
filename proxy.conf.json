@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "https://testing.certant.com/pokedex-api/",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

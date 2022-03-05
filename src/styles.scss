@@ -1,0 +1,51 @@
+@use "./scss/utils/" as *;
+
+:root {
+  // Colors
+  --off-white: hsl(0, 0%, 95%);
+  --dark-gray: hsl(0, 0%, 31%);
+  --pkmn-red: hsl(0, 55%, 50%);
+}
+
+html {
+  overflow: hidden;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  overflow: auto;
+  margin: 0;
+  background-color: var(--off-white);
+  font-family: "Nunito", Roboto, "Helvetica Neue", sans-serif;
+}
+
+input {
+  &::-ms-reveal,
+  &::-ms-clear {
+    display: none;
+  }
+}
+
+/* Allow disabled animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
