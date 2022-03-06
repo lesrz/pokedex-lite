@@ -42,9 +42,10 @@ Pokédex Lite está configurado para correr en un entorno de desarrollo, por lo 
 
 Utilizo un proxy configurado en `proxy.conf.json` para apuntar al URL del API como conexión segura. Referencia[^1].
 
-```
+> API-URL representa la URL de la API a consumir
+```json
     "/api": {
-    "target": "API-URL", // API-URL representa la URL real de la API
+    "target": "API-URL",
     "secure": true,
     "changeOrigin": true,
     "pathRewrite": {
