@@ -57,4 +57,9 @@ Utilizo un proxy configurado en `proxy.conf.json` para apuntar al URL del API co
 
 Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que configuré el array de Pokémon con datos e imágenes reales.
 
+## Mejoras
+
+- [ ] Abstraer componentes como el `container`, `button`, y los `input` para reutilizarlos para toda la aplicación.
+- [ ] Arreglar la lógica de la sesión. Actualmente se puede acceder a la página de `login` incluso si el usuario ya está ingresado.
+
 [^1]: [Fixing CORS errors with Angular CLI proxy](https://levelup.gitconnected.com/fixing-cors-errors-with-angular-cli-proxy-e5e0ef143f85)
