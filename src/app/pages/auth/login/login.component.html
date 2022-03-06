@@ -1,0 +1,36 @@
+<div class="login-container">
+  <h2 class="welcome">Welcome!</h2>
+  <form
+    class="form"
+    action=""
+    method="post"
+    [formGroup]="formGroup"
+    (ngSubmit)="login()"
+  >
+    <div class="login-form">
+      <label class="visually-hidden" for="username">Username</label>
+      <input
+        id="username"
+        type="text"
+        placeholder="Username"
+        formControlName="username"
+        required
+      />
+      <label class="visually-hidden" for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+        required
+      />
+    </div>
+    <button class="login-button" type="submit">
+      Login<img
+        class="login-arrow-icon"
+        src="../../assets/icons/arrow-right.svg"
+        alt="arrow pointing right"
+      />
+    </button>
+  </form>
+</div>
