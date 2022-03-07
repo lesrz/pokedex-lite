@@ -6,9 +6,11 @@
 
 [![Figma Design](https://img.shields.io/badge/figma-design%20file-orange)](https://www.figma.com/file/YGnnCFY9270C0OdSR6x13a/pok%C3%A9dex-lite?node-id=0%3A1)
 
-> <a href="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" alt="expandir">**🔗 Expand diagram**</a> 💡 Abrir en nueva pestaña: `CTRL + Click`
+> <a href="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" alt="expandir">**🔗 Expand diagram**</a> 💡 Abrir en nueva pestaña: `CTRL + Click` <p align="left"><img src="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" alt="diagrama" height=140></p>
 
-<p align="left"><img src="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" alt="diagrama" height=140></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/87744767/157090639-016732ff-5acb-45dc-bdcf-99ab5d2e5b6e.png" alt="captura" width="900" height="100%"></p>
+
+> **🛠 Tools:** Visual Studio Code, Figma, Postman, HTTPie, Swagger
 
 ## Index
 
