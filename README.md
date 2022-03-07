@@ -1,10 +1,19 @@
-# <img src="https://user-images.githubusercontent.com/87744767/156889575-f2850a70-bb88-4c33-9ad1-dbc34154f7f6.png" width="24"> Pokédex Lite
+<img src="https://user-images.githubusercontent.com/87744767/156889575-f2850a70-bb88-4c33-9ad1-dbc34154f7f6.png" width="24"> Pokédex Lite
+=============================
 
 | <a href="https://angular.io/" alt="angular site"><img src="https://cdn.worldvectorlogo.com/logos/angular-3.svg" alt="angular" height="24" align="center"></a> | <a href="https://www.typescriptlang.org/" alt="typescript site"><img src="https://i.pinimg.com/originals/c3/8e/e8/c38ee8475ee7f3680f706c56c3a1194c.png" alt="typescript" height="32" align="center"></a> |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                          **13.2.5**                                                                           |                                                                                                **4.5.2**                                                                                                 |
 
 [![Figma Design](https://img.shields.io/badge/figma-design%20file-orange)](https://www.figma.com/file/YGnnCFY9270C0OdSR6x13a/pok%C3%A9dex-lite?node-id=0%3A1)
+
+## Index
+
+- [Setting Up](#setting-up)
+  - [Full script](#full-script)
+- [API Proxy](#api-proxy)
+- [Login](#login)
+- [To Do](#to-do)
 
 ## Setting Up
 
