@@ -5,6 +5,19 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
+export interface AddPokemon {
+  pokemon: {
+    id: number;
+    name: string;
+    lvl: number;
+    evolutionId: number;
+    abilities: { name: string; description: string }[];
+    type: string[];
+    image: string;
+  };
+  userId: string;
+}
+
 @Injectable({
   providedIn: 'root',
 })
@@ -23,7 +36,7 @@ export class PokedexService {
     return this.http.put(`${environment.apiUrl}/pokemon`, pokemon);
   }
 
-  addPokemon(pokemon: Pokemon): Observable<any> {
+  addPokemon(pokemon: AddPokemon): Observable<any> {
     return this.http.post(`${environment.apiUrl}/pokemon`, pokemon);
   }
 
