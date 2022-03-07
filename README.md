@@ -117,7 +117,7 @@ La funcionalidad de añadir Pokémon crea un objeto `null`. No logré encontrar 
 }
 ```
 
-La API resuelve sin problemas, aceptando los datos tal cual están (la interface dentro de `pokedex.service.ts` refleja este body hasta en órden), pero al solicitar la lista nuevamente figura como `null`.
+La API resuelve sin problemas, aceptando los datos tal cual están (la interface dentro de `pokedex.service.ts` refleja este body hasta en órden), pero al solicitar la lista nuevamente figura como `null`. El resultado es igual tanto en la app como en mis tests de Postman y HTTPie.
 
 Es posible que haya algo muy obvio que no estoy viendo, pero al estar cerca de la fecha límite y sin acceso a la base de datos no podré solucionarlo.
 
