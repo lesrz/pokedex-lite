@@ -1,3 +1,29 @@
-<div *ngIf="authService.isLogged">
-  <button type="button" (click)="onLogout()">Log Out</button>
+<div id="container" class="home__container" *ngIf="authService.isLogged">
+  <button class="home__logout" type="button" (click)="onLogout()">
+    Log Out
+  </button>
+  <div class="pokedex__container">
+    <h1 class="pokedex__title">Currently known</h1>
+    <ul class="pokedex__category">
+      <li class="pokedex__label-type">Type</li>
+      <li class="pokedex__label-name">Name</li>
+      <li class="pokedex__label-level">Level</li>
+    </ul>
+    <div class="pokedex__list-container">
+      <div class="pokedex__list" *ngFor="let pokemon of pokedex">
+        <a (click)="onSelect(pokemon)">
+          <ul class="pokedex__item">
+            <li class="pokemon__types">
+              {{ pokemon.type[0] }}<br />{{ pokemon.type[1] }}
+            </li>
+            <li class="pokemon__name">{{ pokemon.name }}</li>
+            <li class="pokemon__level">Lv. {{ pokemon.lvl }}</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+    <button class="pokedex__add-button" type="button" (click)="onAdd()">
+      New
+    </button>
+  </div>
 </div>
