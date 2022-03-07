@@ -1,0 +1,106 @@
+@use "../../../../scss/utils/" as *;
+
+* {
+  font-family: "Nunito", sans-serif !important;
+}
+
+input {
+  display: flex;
+  border: 1px solid hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 95%);
+  border-radius: rem(8);
+  padding: rem(4);
+  margin-bottom: rem(4);
+}
+
+.edit__container {
+  // Flex
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(70);
+  padding: rem(16) rem(32);
+  border-radius: rem(25);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  // Properties
+  background-color: white;
+  @include for-size(phone-only) {
+    width: 70vw;
+    height: 65vh;
+  }
+  @include for-size(tablet-portrait-up) {
+    width: rem(360);
+    height: 65vh;
+  }
+  @include for-size(desktop-up) {
+    width: 25vw;
+    height: 65vh;
+  }
+  @include for-size(big-desktop-up) {
+    margin-top: rem(16);
+    width: 30vw;
+    height: 65vh;
+  }
+  transition: all 0.3s ease-in-out;
+  .edit__title {
+    align-self: flex-start;
+    font-weight: 900;
+    margin: 0;
+  }
+  .edit__details {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    @include for-size(phone-only) {
+      width: 65vw;
+    }
+    @include for-size(tablet-portrait-up) {
+      width: rem(320);
+    }
+    @include for-size(desktop-up) {
+      width: 20vw;
+    }
+    @include for-size(big-desktop-up) {
+      width: 25vw;
+    }
+    .edit__top-row {
+      display: grid;
+      grid-template-columns: rem(80) rem(140) rem(50);
+      .edit__name {
+        width: rem(140);
+      }
+    }
+    .edit__image {
+      display: flex;
+      flex-direction: column;
+      width: rem(270);
+      background-color: white;
+      border: 1px solid hsl(0, 0%, 85%);
+      border-radius: rem(8);
+      .edit__imgUrl {
+        background-color: white;
+        border: none;
+        width: rem(260);
+      }
+      .edit__display-image {
+        align-self: center;
+        height: 100%;
+        width: rem(128);
+      }
+    }
+    .edit__bottom-row {
+      display: flex;
+      flex-direction: row;
+      .edit__abilities {
+        input {
+          width: rem(200);
+        }
+      }
+      .edit__evolutions {
+        input {
+          width: rem(70);
+        }
+      }
+    }
+  }
+}

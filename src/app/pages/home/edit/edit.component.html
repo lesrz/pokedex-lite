@@ -1,0 +1,93 @@
+<div class="edit__container">
+  <h1 class="edit__title">Edit Pokemon</h1>
+  <form class="edit__details" #editForm="ngForm">
+    <div class="edit__top-row">
+      <input
+        class="edit__type"
+        type="text"
+        [(ngModel)]="pkmn.type"
+        name="type"
+        required
+      />
+      <input
+        class="edit__name"
+        type="text"
+        [(ngModel)]="pkmn.name"
+        name="name"
+        required
+      />
+      <input
+        class="edit__level"
+        type="number"
+        [(ngModel)]="pkmn.lvl"
+        name="lvl"
+        required
+      />
+    </div>
+    <div class="edit__image">
+      <input
+        class="edit__imgUrl"
+        type="text"
+        [(ngModel)]="pkmn.image"
+        name="image"
+        required
+      />
+      <!-- Investigué que es posible convertir assets de -->
+      <!-- API locales a Blob para luego procesar esa    -->
+      <!-- imagen como URL con FileReader pero no me     -->
+      <!-- alcanzó el tiempo 😟                         -->
+      <img
+        class="edit__display-image"
+        src="{{ pkmn.image }}"
+        alt="{{ pkmn.name }}"
+      />
+    </div>
+    <div class="edit__bottom-row">
+      <div class="edit__abilities">
+        <input
+          class="edit__first-ability-name"
+          type="text"
+          [(ngModel)]="pkmn.abilities[0].name"
+          name="first-ability-name"
+          required
+        />
+        <input
+          class="edit__first-ability-desc"
+          type="text"
+          [(ngModel)]="pkmn.abilities[0].description"
+          name="first-ability-desc"
+          required
+        />
+        <input
+          class="edit__second-ability-name"
+          type="text"
+          [(ngModel)]="pkmn.abilities[1].name"
+          name="second-ability-name"
+          required
+        />
+        <input
+          class="edit__second-ability-desc"
+          type="text"
+          [(ngModel)]="pkmn.abilities[1].description"
+          name="second-ability-desc"
+          required
+        />
+      </div>
+      <div class="edit__evolutions">
+        <input
+          class="edit__evolution-id"
+          type="number"
+          [(ngModel)]="pkmn.evolutionId"
+          name="evolutionId"
+          required
+        />
+      </div>
+    </div>
+  </form>
+  <div class="edit__buttons">
+    <button class="edit__back-btn" type="button" (click)="return()">
+      Cancel
+    </button>
+    <button class="edit__save-btn" type="submit">Save</button>
+  </div>
+</div>
