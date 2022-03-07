@@ -14,10 +14,11 @@
         <a (click)="onSelect(pokemon)">
           <ul class="pokedex__item">
             <li class="pokemon__types">
-              {{ pokemon.type[0] }}<br />{{ pokemon.type[1] }}
+              {{ pokemon.type[0] }}<br />{{ pokemon!.type[1] }}
             </li>
             <li class="pokemon__name">{{ pokemon.name }}</li>
             <li class="pokemon__level">Lv. {{ pokemon.lvl }}</li>
+            <li class="pokemon__id" style="display: none">{{ pokemon.id }}</li>
           </ul>
         </a>
       </div>
