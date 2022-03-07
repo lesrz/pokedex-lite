@@ -61,8 +61,12 @@ Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que
 
 ## Mejoras
 
+- [ ] Evitar que se hagan solicitudes a la API cada vez que se carga la página `home`. (Alta prioridad)
 - [ ] Abstraer componentes como el `container`, `button`, y los `input` para reutilizarlos para toda la aplicación.
 - [ ] Arreglar la lógica de la sesión. Actualmente se puede acceder a la página de `login` incluso si el usuario ya está ingresado.
 - [ ] Añadir guards para los componentes de `edit` y `add` Pokémon.
+- [ ] Lanzar excepciones para todo en la UI.
+- [ ] Limitar las opciones que el usuario puede editar/agregar en `types`.
+- [ ] Barra de búsqueda.
 
 [^1]: [Fixing CORS errors with Angular CLI proxy](https://levelup.gitconnected.com/fixing-cors-errors-with-angular-cli-proxy-e5e0ef143f85)
