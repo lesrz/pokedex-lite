@@ -3,6 +3,14 @@
   <form class="edit__details" #editForm="ngForm">
     <div class="edit__top-row">
       <input
+        class="edit__id"
+        type="number"
+        [(ngModel)]="pkmn.id"
+        name="id"
+        style="display: none"
+        required
+      />
+      <input
         class="edit__type"
         type="text"
         [(ngModel)]="pkmn.type"
@@ -45,31 +53,31 @@
     <div class="edit__bottom-row">
       <div class="edit__abilities">
         <input
-          class="edit__first-ability-name"
+          class="edit__firstAbilityName"
           type="text"
           [(ngModel)]="pkmn.abilities[0].name"
-          name="first-ability-name"
+          name="firstAbilityName"
           required
         />
         <input
-          class="edit__first-ability-desc"
+          class="edit__firstAbilityDesc"
           type="text"
           [(ngModel)]="pkmn.abilities[0].description"
-          name="first-ability-desc"
+          name="firstAbilityDesc"
           required
         />
         <input
-          class="edit__second-ability-name"
+          class="edit__secondAbilityName"
           type="text"
           [(ngModel)]="pkmn.abilities[1].name"
-          name="second-ability-name"
+          name="secondAbilityName"
           required
         />
         <input
-          class="edit__second-ability-desc"
+          class="edit__secondAbilitydesc"
           type="text"
           [(ngModel)]="pkmn.abilities[1].description"
-          name="second-ability-desc"
+          name="secondAbilityDesc"
           required
         />
       </div>
@@ -88,6 +96,8 @@
     <button class="edit__back-btn" type="button" (click)="return()">
       Cancel
     </button>
-    <button class="edit__save-btn" type="submit">Save</button>
+    <button class="edit__save-btn" type="submit" (click)="onSave(editForm)">
+      Save
+    </button>
   </div>
 </div>
