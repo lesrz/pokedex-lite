@@ -3,6 +3,7 @@
 :root {
   // Colors
   --off-white: hsl(0, 0%, 95%);
+  --off-black: hsl(0, 0%, 5%);
   --dark-gray: hsl(0, 0%, 31%);
   --pkmn-red: hsl(0, 55%, 50%);
 }
@@ -49,3 +50,9 @@ input {
   height: 1px;
   overflow: hidden;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
