@@ -1,1 +1,60 @@
-<p>add works!</p>
+<div class="add__container">
+  <h1 class="add__title">New Pokemon</h1>
+  <form class="add__details" #editForm="ngForm">
+    <div class="add__top-row">
+      <input class="add__type" type="text" ngModel name="type" required />
+      <input class="add__name" type="text" ngModel name="name" required />
+      <input class="add__level" type="number" ngModel name="lvl" required />
+    </div>
+    <div class="add__image">
+      <input class="add__imgUrl" type="text" ngModel name="image" required />
+    </div>
+    <div class="add__bottom-row">
+      <div class="add__abilities">
+        <input
+          class="add__first-ability-name"
+          type="text"
+          ngModel
+          name="first-ability-name"
+          required
+        />
+        <input
+          class="add__first-ability-desc"
+          type="text"
+          ngModel
+          name="first-ability-desc"
+          required
+        />
+        <input
+          class="add__second-ability-name"
+          type="text"
+          ngModel
+          name="second-ability-name"
+          required
+        />
+        <input
+          class="add__second-ability-desc"
+          type="text"
+          ngModel
+          name="second-ability-desc"
+          required
+        />
+      </div>
+      <div class="add__evolutions">
+        <input
+          class="add__evolution-id"
+          type="number"
+          ngModel
+          name="evolutionId"
+          required
+        />
+      </div>
+    </div>
+  </form>
+  <div class="add__buttons">
+    <button class="add__back-btn" type="button" (click)="return()">
+      Cancel
+    </button>
+    <button class="add__register-btn" type="submit">Register</button>
+  </div>
+</div>

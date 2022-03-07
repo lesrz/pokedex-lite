@@ -1,14 +1,16 @@
+import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './add.component.html',
-  styleUrls: ['./add.component.scss']
+  styleUrls: ['./add.component.scss'],
 })
 export class AddComponent implements OnInit {
+  constructor(private router: Router, private route: ActivatedRoute) {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  return(): void {
+    this.router.navigate([''], { relativeTo: this.route });
   }
-
 }
