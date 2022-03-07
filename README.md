@@ -55,6 +55,17 @@ Utilizo un proxy configurado en `proxy.conf.json` para apuntar al URL del API co
     }
 ```
 
+> Añadir las siguientes opciones a `angular.json` para no tener que llamar al proxy en la consola
+
+```json
+    "serve":
+        {
+          "options": {
+            "browserTarget": "projectname:build",
+            "proxyConfig": "./proxy.conf.json"
+        },
+```
+
 ## Login
 
 Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que configuré el array de Pokémon con datos e imágenes reales.
