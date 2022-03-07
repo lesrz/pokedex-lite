@@ -7,6 +7,10 @@
 
 [![Figma Design](https://img.shields.io/badge/figma-design%20file-orange)](https://www.figma.com/file/YGnnCFY9270C0OdSR6x13a/pok%C3%A9dex-lite?node-id=0%3A1)
 
+<a href="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" target="_blank">**🔗 Expand diagram**</a>
+
+<p align="left"><img src="https://user-images.githubusercontent.com/87744767/156983748-3c64f73e-b1a4-4098-bafe-6a7e70459632.png" alt="diagrama" height=140></p>
+
 ## Index
 
 - [Setting Up](#setting-up)
