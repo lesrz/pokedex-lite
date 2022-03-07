@@ -78,6 +78,7 @@ Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que
 - [ ] Añadir guards para los componentes de `edit` y `add` Pokémon.
 - [ ] Lanzar excepciones para todo en la UI.
 - [ ] Limitar las opciones que el usuario puede editar/agregar en `types`.
+- [ ] Crear una función para matchear `evolutionId` a sus respectivos datos y mostrarlos.
 - [ ] Barra de búsqueda.
 - [ ] Subir imágen desde archivo local utilizando un servicio de terceros.
 
