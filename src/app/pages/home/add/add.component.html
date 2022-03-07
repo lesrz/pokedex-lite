@@ -1,42 +1,74 @@
 <div class="add__container">
   <h1 class="add__title">New Pokemon</h1>
-  <form class="add__details" #editForm="ngForm">
+  <form class="add__details" #addForm="ngForm">
     <div class="add__top-row">
-      <input class="add__type" type="text" ngModel name="type" required />
-      <input class="add__name" type="text" ngModel name="name" required />
-      <input class="add__level" type="number" ngModel name="lvl" required />
+      <input
+        class="add__type"
+        type="text"
+        ngModel
+        name="type"
+        placeholder="Type/s"
+        required
+      />
+      <input
+        class="add__name"
+        type="text"
+        ngModel
+        name="name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="add__level"
+        type="number"
+        ngModel
+        name="lvl"
+        placeholder="Level"
+        required
+      />
     </div>
     <div class="add__image">
-      <input class="add__imgUrl" type="text" ngModel name="image" required />
+      <input
+        class="add__imgUrl"
+        type="text"
+        ngModel
+        name="image"
+        placeholder="Image URL"
+        required
+      />
     </div>
     <div class="add__bottom-row">
       <div class="add__abilities">
         <input
-          class="add__first-ability-name"
+          class="add__firstAbilityName"
           type="text"
           ngModel
-          name="first-ability-name"
+          name="firstAbilityName"
+          placeholder="Name"
           required
         />
         <input
-          class="add__first-ability-desc"
+          class="add__firstAbilityDesc"
           type="text"
           ngModel
-          name="first-ability-desc"
+          name="firstAbilityDesc"
+          placeholder="Description"
           required
         />
         <input
-          class="add__second-ability-name"
+          class="add__secondAbilityName"
           type="text"
           ngModel
-          name="second-ability-name"
+          name="secondAbilityName"
+          placeholder="Name"
           required
         />
         <input
-          class="add__second-ability-desc"
+          class="add__secondAbilityDesc"
           type="text"
           ngModel
-          name="second-ability-desc"
+          name="secondAbilityDesc"
+          placeholder="Description"
           required
         />
       </div>
@@ -46,15 +78,42 @@
           type="number"
           ngModel
           name="evolutionId"
+          placeholder="Evo. ID"
           required
         />
       </div>
+    </div>
+    <div style="display: flex">
+      <input
+        class="add__id"
+        type="number"
+        ngModel
+        name="id"
+        placeholder="Pkmn ID"
+        style="width: 6rem"
+        required
+      />
+      <input
+        class="add__userId"
+        type="text"
+        [(ngModel)]="user!.userId"
+        name="userId"
+        placeholder="User ID: {{ user?.userId }}"
+        style="width: 6rem; background-color: #d5d5d5"
+        readonly
+      />
     </div>
   </form>
   <div class="add__buttons">
     <button class="add__back-btn" type="button" (click)="return()">
       Cancel
     </button>
-    <button class="add__register-btn" type="submit">Register</button>
+    <button
+      class="add__register-btn"
+      type="submit"
+      (click)="onRegister(addForm)"
+    >
+      Register
+    </button>
   </div>
 </div>
