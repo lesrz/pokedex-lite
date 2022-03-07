@@ -128,6 +128,7 @@ Es posible que haya algo muy obvio que no estoy viendo, pero al estar cerca de l
 - [ ] Lanzar excepciones para todo en la UI.
 - [ ] Limitar las opciones que el usuario puede editar/agregar en `types`.
 - [ ] Crear una función para matchear `evolutionId` a sus respectivos datos y mostrarlos.
+- [ ] Implementar redirección de URLs no existentes a `404` (actualmente sólo accesible ingresando /404).
 - [ ] Barra de búsqueda.
 - [ ] Subir imágen desde archivo local utilizando un servicio de terceros.
 
