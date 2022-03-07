@@ -1,5 +1,4 @@
-<img src="https://user-images.githubusercontent.com/87744767/156889575-f2850a70-bb88-4c33-9ad1-dbc34154f7f6.png" width="24"> Pokédex Lite
-=============================
+# <img src="https://user-images.githubusercontent.com/87744767/156889575-f2850a70-bb88-4c33-9ad1-dbc34154f7f6.png" width="24"> Pokédex Lite
 
 | <a href="https://angular.io/" alt="angular site"><img src="https://cdn.worldvectorlogo.com/logos/angular-3.svg" alt="angular" height="24" align="center"></a> | <a href="https://www.typescriptlang.org/" alt="typescript site"><img src="https://i.pinimg.com/originals/c3/8e/e8/c38ee8475ee7f3680f706c56c3a1194c.png" alt="typescript" height="32" align="center"></a> |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -17,6 +16,7 @@
   - [Full script](#full-script)
 - [API Proxy](#api-proxy)
 - [Login](#login)
+- [Pokédex Service](#pokédex-service)
 - [To Do](#to-do)
 
 ## Setting Up
@@ -84,6 +84,40 @@ Utilizo un proxy configurado en `proxy.conf.json` para apuntar al URL del API co
 ## Login
 
 Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que configuré el array de Pokémon con datos e imágenes reales.
+
+## Pokédex Service
+
+**Añadir**
+
+La funcionalidad de añadir Pokémon crea un objeto `null`. No logré encontrar la causa desde el front, parece ser algún error de la API ya que ingresando los siguientes datos:
+
+```json
+{
+  "pokemon": {
+    "id": 303,
+    "name": "Mawile",
+    "lvl": 12,
+    "evolutionId": 0,
+    "abilities": [
+      {
+        "name": "Mordisco",
+        "description": "Un voraz bocado que puede hacer retroceder al objetivo."
+      },
+      {
+        "name": "Llanto Falso",
+        "description": "Lágrimas de cocodrilo que bajan mucho la Defensa Especial del objetivo."
+      }
+    ],
+    "type": ["steel", "fairy"],
+    "image": "https://static.wikia.nocookie.net/espokemon/images/b/bd/Mawile.png/revision/latest?cb=20150301011351"
+  },
+  "userId": "1"
+}
+```
+
+La API resuelve sin problemas, aceptando los datos tal cual están (la interface dentro de `pokedex.service.ts` refleja este body hasta en órden), pero al solicitar la lista nuevamente figura como `null`.
+
+Es posible que haya algo muy obvio que no estoy viendo, pero al estar cerca de la fecha límite y sin acceso a la base de datos no podré solucionarlo.
 
 ## To Do
 
