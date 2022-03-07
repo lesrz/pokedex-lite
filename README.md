@@ -43,6 +43,7 @@ Pokédex Lite está configurado para correr en un entorno de desarrollo, por lo 
 Utilizo un proxy configurado en `proxy.conf.json` para apuntar al URL del API como conexión segura. Referencia[^1].
 
 > API-URL representa la URL de la API a consumir
+
 ```json
     "/api": {
     "target": "API-URL",
@@ -62,5 +63,6 @@ Es recomendable loggear con el user `trainer` para una mejor experiencia, ya que
 
 - [ ] Abstraer componentes como el `container`, `button`, y los `input` para reutilizarlos para toda la aplicación.
 - [ ] Arreglar la lógica de la sesión. Actualmente se puede acceder a la página de `login` incluso si el usuario ya está ingresado.
+- [ ] Añadir guards para los componentes de `edit` y `add` Pokémon.
 
 [^1]: [Fixing CORS errors with Angular CLI proxy](https://levelup.gitconnected.com/fixing-cors-errors-with-angular-cli-proxy-e5e0ef143f85)
