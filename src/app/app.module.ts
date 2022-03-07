@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { LoginActivate } from './loginactivate.guard';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -7,7 +8,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './shared/components/footer/footer.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [AppComponent, FooterComponent],
   imports: [
@@ -15,6 +16,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    NgbModule,
+    FormsModule,
   ],
   providers: [LoginActivate],
   bootstrap: [AppComponent],
