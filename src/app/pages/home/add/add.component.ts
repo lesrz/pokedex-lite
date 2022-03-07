@@ -77,7 +77,7 @@ export class AddComponent implements OnInit {
     // valor null.
     this.pokedexSvc.addPokemon(addedPokemon).subscribe({
       next: (res: Pokemon) => {
-        console.log(res);
+        // console.log(res);
       },
       error: (error: HttpErrorResponse) => {
         alert(error.message);
